@@ -9,7 +9,7 @@ services:
       - /dev/fuse:/dev/fuse
     security_opt:
       - apparmor:unconfined
-    privileged: false
+    privileged: true
     environment:
       - TZ=Europe/Paris
     volumes:
