@@ -7,6 +7,9 @@ services:
       - SYS_ADMIN
     devices:
       - /dev/fuse:/dev/fuse
+    security_opt:
+      - apparmor:unconfined
+    privileged: false
     environment:
       - TZ=Europe/Paris
     volumes:
