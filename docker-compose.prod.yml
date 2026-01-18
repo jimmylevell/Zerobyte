@@ -11,7 +11,7 @@ services:
       - TZ=Europe/Paris
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - zerobyteLib:/var/lib/zerobyte
+      - /srv/docker/zerobyte/lib:/var/lib/zerobyte
     networks:
       - traefik-public
     deploy:
@@ -36,11 +36,3 @@ services:
 networks:
   traefik-public:
     external: true
-
-volumes:
-  zerobyteLib:
-    driver: local
-    driver_opts:
-      type: none
-      device: /var/lib/zerobyte/lib
-      o: bind
