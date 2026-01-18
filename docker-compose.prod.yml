@@ -42,5 +42,5 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: /var/lib/zerobyte/lib
+      device: /srv/docker/zerobyte/lib
       o: bind
