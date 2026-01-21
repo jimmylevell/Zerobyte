@@ -6,7 +6,7 @@ services:
     cap_add:
       - SYS_ADMIN
     devices:
-      - /dev/fuse:/dev/fuse
+      - /dev/fuse
     security_opt:
       - apparmor:unconfined
     privileged: true
