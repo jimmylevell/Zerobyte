@@ -15,6 +15,7 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /srv/docker/zerobyte/lib:/var/lib/zerobyte
+      - /srv:/mnt/srv
     networks:
       - traefik-public
     deploy:
